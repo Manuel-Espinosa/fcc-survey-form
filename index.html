@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>FCC SURVEY FORM</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <h1 id="creator">Manuel Espinosa</h1>
+
+    </header>
+    <main>
+        <form id="survey-form" action="#">
+            <p id="description">Description</p>
+            <div id="input-elements" class="input-element">
+            <label for="name" id="name-label" >Name
+                <input placeholder="Your name" id="name" class="input-space" type="text" required>
+            </label>
+            </div>
+            <div id="input-elements" class="input-element">
+            <label for="email" id="email-label" >Email
+                <input placeholder="Your email" id="email" type="email" class="input-space" required>
+            </label>
+            </div>
+            <div id="input-elements" class="input-element">
+            <label for="number" id="number-label" >Number
+                <input placeholder="Your number" id="number" type="number" class="input-space" min="0000000000" max="9999999999">   
+            </label>
+            </div>
+            
+            <div id="dropdown-element" class="dropdown-element">
+                <label for="dropdwon" id="dropdown-label">Choose an option:
+                    <select name="dropdown" id="dropdown">
+                        <option value="option1">Option1</option>
+                        <option value="option2">Option2</option>
+                        <option value="option3">Option3</option>
+                        <option value="option">Option4</option>
+                      </select> 
+                </label>
+                
+            </div>
+
+            <div id="radiobutton-elements" class="radiobutton-element">
+                <p>Choose your gender:</p>
+                <label for="gender" id="gender-label">
+                    <input id="gender" value="female" type="radio" name="gender">Female
+                </label>
+                <label for="gender" id="gender-label">
+                    <input id="gender" value="male" type="radio" name="gender">Male
+                </label>
+            </div>
+
+            <div id="checkboxes-elements" class="checkbox-element">
+                <p>Choose your ocupation:</p>
+                <label for="ocupation" id="ocupation-label">
+                    <input id="ocupation" value="worker" type="checkbox" name="ocupation">Worker
+                </label>
+                <label>
+                    <input id="ocupation" value="student" type="checkbox" name="ocupation">Student
+                </label>
+            </div>
+
+            <div id="textarea-element" class="textarea-element">
+                <label for="comments" id="comments-label" >We want to hear you!
+                    <textarea id="comments" name="commments" rows="4" cols="50" placeholder="Please, add a comment you have about your experience fulling this Survey"></textarea>
+                </label>
+
+            </div>
+            <button id="submit" type="submit">Send!</button> 
+        </form>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
+
+<!--
+
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+-->
